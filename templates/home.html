@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chat app</title>
+  
+      
+      
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+ crossorigin="anonymous">
+</script>
+
+
+<style>
+   body {
+       background: url('https://img.freepik.com/premium-photo/3d-rendering-bunch-square-badges-with-whatsapp-logo-green-background_284880-352.jpg') no-repeat center center;
+       background-size: cover;
+   }
+</style>
+
+</head>
+<body>
+   <form method="post" class="chat-form">
+      <h3>Enter The Chat Room</h3>
+      <div>
+         <label for="name">Name:</label>
+         <input type="text" id="name" placeholder="Pick a name!" name="name" value="{{name}}" autocomplete="off"/>
+      </div>
+      <div class="join">
+         <input type="text" placeholder="Room Code" name="code" value="{{code}}" autocomplete="off"/>
+         <button type="submit" name="join">Join Room</button>
+      </div>
+      <button type="submit" name="create" class="create-btn">Create Room</button>
+      {% if error %}
+      <ul>
+         <li>{{error}}</li>
+      </ul>
+      {% endif %}
+   </form>
+</body>
+</html>

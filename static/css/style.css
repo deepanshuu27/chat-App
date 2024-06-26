@@ -1,0 +1,101 @@
+
+      /* for home page */
+      
+      
+      body {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         margin: 0;
+         background-color: #f0f0f0;
+         font-family: Arial, sans-serif;
+         
+      }
+      
+      .chat-form {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+         background-color: #ffffff;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         width: 300px;
+      }
+      
+      .chat-form h3 {
+         margin: 0;
+         margin-bottom: 20px;
+         color: #333;
+         font-size: 20px;
+      }
+      
+      .chat-form label {
+         display: block;
+         margin-bottom: 5px;
+         font-weight: bold;
+         color: #555;
+      }
+      
+      .chat-form input[type="text"] {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;   
+       
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+     }
+     
+     .join {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+     }
+     
+     .join input[type="text"] {
+        flex: 1;
+     }
+     
+     .chat-form button {
+        width: 40%;
+        height: 45px;
+       
+        background-color: #28a745; /* Green color */
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 14px; /* Reduced font size */
+     }
+     
+     .chat-form button:hover {
+        background-color: #218838; /* Darker green on hover */
+     }
+
+
+     .chat-form .create-btn {
+        height: 50px;
+        padding:7px;
+        width:110px; /* Smaller padding for create button */
+     }
+     
+     .chat-form ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        color: red;
+        text-align: center;
+     }
+  
+
+
+    
+    
